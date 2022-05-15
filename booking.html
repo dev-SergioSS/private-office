@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Бронирования</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header class="cabinet__header">
+		<div class="container">
+			<nav>
+
+				<ul data-list-links>
+					<li><a href="index.html" data-link>Мой профиль</a></li>
+					<li><a href="booking.html" data-link class="open">Бронирования</a></li>
+					<li><a href="report.html" data-link>Отчет</a></li>
+					<li><a href="offer.html" data-link>Спецпредложения</a></li>
+					<li><a href="learn.html" data-link>Обучение</a></li>
+					<li><a href="faq.html" data-link>FAQ/инструкции</a></li>
+				</ul>
+
+
+				<div class="menu-button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
+				<div class="menu-mobile-btn">
+					<div class="mobile-btn-1"></div>
+					<div class="mobile-btn-2"></div>
+				</div>
+
+			</nav>
+
+
+
+		</div>
+	</header>
+	<main>
+		<div class="mobile-row">
+			<div class="container">
+				<div class="page-name">Бронирование</div>
+				<div class="action-btn button-yellow">Создать новую</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="booking__head">
+				<div class="booking__head-left">
+					<div class="booking__selects">
+						<div class="select select-filt-number">
+							<div class="select__header">
+								<span class="select__current">За № заявки</span>
+								<div class="select__btn"></div>
+							</div>
+							<div class="select__body">
+								<p class="select__item">За № заявки</p>
+								<p class="select__item">Фамилия</p>
+								<p class="select__item">Дата</p>
+							</div>
+						</div>
+						<div class="select select-filt-kk">
+							<div class="select__header">
+								<span class="select__current">Все</span>
+								<div class="select__btn"></div>
+							</div>
+							<div class="select__body">
+								<p class="select__item">Все</p>
+								<p class="select__item">Royal Caribbean</p>
+								<p class="select__item">Celebrity Cruises</p>
+								<p class="select__item">Azamara</p>
+							</div>
+						</div>
+					</div>
+					<form class="booking__search" name="search">
+						<input type="text">
+						<button type="submit" class="button-dark">Поиск</button>
+					</form>
+				</div>
+
+				<form class="dates-block" name="choose-dates">
+					<div class="dates-icon"></div>
+					<div class="dates-inputs">
+
+						<input type="number" placeholder="дд" maxlength="2">
+						<span>.</span>
+						<input type="number" placeholder="мм" maxlength="2">
+						<span>.</span>
+						<input type="number" placeholder="гг" maxlength="2">
+
+						<p>—</p>
+
+						<input type="number" placeholder="дд" maxlength="2">
+						<span>.</span>
+						<input type="number" placeholder="мм" maxlength="2">
+						<span>.</span>
+						<input type="number" placeholder="гг" maxlength="2">
+
+					</div>
+					<button type="submit" class="button-dark">Выгрузить</button>
+				</form>
+			</div>
+			<div class="booking__filter">
+				<ul>
+					<li>
+						<a href="#">Все заявки</a>
+						<span>10</span>
+					</li>
+					<li>
+						<a href="#">Новые</a>
+						<span>1</span>
+					</li>
+					<li>
+						<a href="#">В работе</a>
+						<span>3</span>
+					</li>
+					<li>
+						<a href="#">Оплаченные</a>
+						<span>4</span>
+					</li>
+					<li>
+						<a href="#">Аннулированные</a>
+						<span>1</span>
+					</li>
+					<li>
+						<a href="#">Архивные</a>
+						<span>1</span>
+					</li>
+				</ul>
+				<a href="#" class="button-yellow booking__filter-btn">Поиск круизов</a>
+			</div>
+			<div class="table">
+				<div class="table__body">
+
+					<div class="table__row table__main-row">
+						<div class="table__row-start-border">
+							<div class="table__row-start">
+								<div class="th th-1">№ брони Дата</div>
+								<div class="th th-2">Дата заезда</div>
+								<div class="th th-3">ФИО туриста</div>
+							</div>
+						</div>
+
+						<div class="th th-4">Название</div>
+						<div class="th th-5">Лайнер</div>
+						<div class="th th-6"></div>
+						<div class="th th-7">Цена нетто, грн</div>
+						<div class="th th-8">Цена брутто, грн</div>
+						<div class="th th-9">Комиссия агента, грн</div>
+						<div class="th th-10">Счет</div>
+						<div class="th th-11">Предо-плата, грн</div>
+						<div class="th th-12">Статус оплаты</div>
+						<div class="th th-13">Доку- менты</div>
+						<div class="th th-14"></div>
+					</div>
+
+					<div class="table__row">
+						<div class="table__row-start-border">
+							<div class="table__row-start">
+								<div class="th th-1">2236592 21.01.21</div>
+								<div class="th th-2">21.01.21</div>
+								<div class="th th-3">Иванов И.И.</div>
+							</div>
+						</div>
+						<div class="th th-4">Средиземное море</div>
+						<div class="th th-5">Harmony of the Seas</div>
+						<div class="th th-6">2</div>
+						<div class="th th-7">422222</div>
+						<div class="th th-8">44444 </div>
+						<div class="th th-9">2222</div>
+						<div class="th th-10 status-green">
+							<a href="#"></a>
+						</div>
+						<div class="th th-11">100000</div>
+						<div class="th th-12 status-yellow"></div>
+						<div class="th th-13 status-red">
+							<a href="#"></a>
+						</div>
+						<div class="th th-14">
+							<a href="#" class="button-yellow">Детали</a>
+						</div>
+					</div>
+
+					<div class="table__row">
+						<div class="table__row-start-border">
+							<div class="table__row-start">
+								<div class="th th-1">2236592 21.01.21</div>
+								<div class="th th-2">21.01.21</div>
+								<div class="th th-3">Иванов И.И.</div>
+							</div>
+						</div>
+						<div class="th th-4">Средиземное море</div>
+						<div class="th th-5">Harmony of the Seas</div>
+						<div class="th th-6">2</div>
+						<div class="th th-7">422222</div>
+						<div class="th th-8">44444 </div>
+						<div class="th th-9">2222</div>
+						<div class="th th-10 status-green">
+							<a href="#"></a>
+						</div>
+						<div class="th th-11">100000</div>
+						<div class="th th-12 status-yellow"></div>
+						<div class="th th-13 status-red">
+							<a href="#"></a>
+						</div>
+						<div class="th th-14">
+							<a href="#" class="button-yellow">Детали</a>
+						</div>
+					</div>
+					<div class="table__row">
+						<div class="table__row-start-border">
+							<div class="table__row-start">
+								<div class="th th-1">2236592 21.01.21</div>
+								<div class="th th-2">21.01.21</div>
+								<div class="th th-3">Иванов И.И.</div>
+							</div>
+						</div>
+						<div class="th th-4">Средиземное море</div>
+						<div class="th th-5">Harmony of the Seas</div>
+						<div class="th th-6">2</div>
+						<div class="th th-7">422222</div>
+						<div class="th th-8">44444 </div>
+						<div class="th th-9">2222</div>
+						<div class="th th-10 status-green">
+							<a href="#"></a>
+						</div>
+						<div class="th th-11">100000</div>
+						<div class="th th-12 status-yellow"></div>
+						<div class="th th-13 status-red">
+							<a href="#"></a>
+						</div>
+						<div class="th th-14">
+							<a href="#" class="button-yellow">Детали</a>
+						</div>
+					</div>
+					<div class="table__row">
+						<div class="table__row-start-border">
+							<div class="table__row-start">
+								<div class="th th-1">2236592 21.01.21</div>
+								<div class="th th-2">21.01.21</div>
+								<div class="th th-3">Иванов И.И.</div>
+							</div>
+						</div>
+						<div class="th th-4">Средиземное море</div>
+						<div class="th th-5">Harmony of the Seas</div>
+						<div class="th th-6">2</div>
+						<div class="th th-7">422222</div>
+						<div class="th th-8">44444 </div>
+						<div class="th th-9">2222</div>
+						<div class="th th-10 status-green">
+							<a href="#"></a>
+						</div>
+						<div class="th th-11">100000</div>
+						<div class="th th-12 status-yellow"></div>
+						<div class="th th-13 status-red">
+							<a href="#"></a>
+						</div>
+						<div class="th th-14">
+							<a href="#" class="button-yellow">Детали</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn-more-row"></div>
+
+
+		</div>
+
+
+	</main>
+	<script src="js/script.js"></script>
+	<script src="js/select.js"></script>
+</body>
+
+</html>
